@@ -1,24 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Greet from './greet/Greet'
+import NewWord from './new_word/NewWord'
+import CheckWords from './check_words/CheckWords'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Greet name="Piyush"/>
+      <div className="columns"> 
+        <div className="column">
+          <NewWord />
+        </div>
+        <div className="column">
+          <CheckWords />
+        </div>
+      </div>
     </div>
   );
 }
